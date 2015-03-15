@@ -8,12 +8,12 @@ module Added
     super
     if respond_to? :added
       mod = self
-      klass.prepend(Module.new do
+      klass.send(:prepend, Module.new{
         define_method(:initialize){ |*args, &block|
           super(*args, &block)
           mod.added(self)
         }
-      end)
+      })
       ObjectSpace.each_object(klass){ |instance|
         added(instance)
       }

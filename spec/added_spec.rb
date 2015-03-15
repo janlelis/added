@@ -67,7 +67,7 @@ describe Added do
      klass.send :define_method, :initialize do |*args|
        @my2 = args[0]
      end
-     klass.include(mod)
+     klass.send :include, mod
      object = klass.new("state2")
 
      assert_equal "state", object.instance_variable_get(:@my)
@@ -75,7 +75,7 @@ describe Added do
    end
 
    it 'respects initializers after inclusion' do
-     klass.include(mod)
+     klass.send :include, mod
      klass.send :define_method, :initialize do |*args|
        @my2 = args[0]
      end
@@ -87,7 +87,7 @@ describe Added do
 
    it 'works with sub-classed classes' do
      sub_klass = Class.new(klass)
-     klass.include(mod)
+     klass.send :include, mod
      object = sub_klass.new
 
      assert_equal "state", object.instance_variable_get(:@my)
