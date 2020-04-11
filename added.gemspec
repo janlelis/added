@@ -9,7 +9,7 @@ Gem::Specification.new do |gem|
   gem.description   = 'Module#added: A unified module hook to run code on all instances when adding the module.'
   gem.license       = "MIT"
   gem.authors       = ["Jan Lelis"]
-  gem.email         = "mail@janlelis.de"
+  gem.email         = "hi@ruby.consulting"
   gem.homepage      = "https://github.com/janlelis/added"
 
   gem.files         = Dir['{**/}{.*,*}'].select { |path| File.file?(path) }

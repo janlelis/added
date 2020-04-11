@@ -5,7 +5,7 @@ Module#added: A unified module hook to run code on all instances when adding the
 
 ## Warning
 
-This is experimental stuff, using new/advanced language features. You should exactly know what you do, if you want to use it in production.
+This is experimental: You should exactly know what you do, if you want to use it in production.
 
 Besides this, I am really curious if you like the approach this gem is taking!
 
@@ -87,4 +87,4 @@ This gem requires a Module#prepend implementation and must have the ObjectSpace 
 
 ## MIT License
 
-Copyright (C) 2015 by [Jan Lelis](http://janlelis.com). 
+Copyright (C) 2015 by [Jan Lelis](https://janlelis.com). 
