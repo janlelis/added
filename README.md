@@ -1,4 +1,4 @@
-# Added Hook for Ruby [![[version]](https://badge.fury.io/rb/added.svg)](http://badge.fury.io/rb/added)  [![[travis]](https://travis-ci.org/janlelis/added.png)](https://travis-ci.org/janlelis/added)
+# Added Hook for Ruby [![[version]](https://badge.fury.io/rb/added.svg)](https://badge.fury.io/rb/added)  [![[ci]](https://github.com/janlelis/added/workflows/Test/badge.svg)](https://github.com/janlelis/added/actions?query=workflow%3ATest)
 
 Module#added: A unified module hook to run code on all instances when adding the module.
 
@@ -87,4 +87,4 @@ This gem requires a Module#prepend implementation and must have the ObjectSpace 
 
 ## MIT License
 
-Copyright (C) 2015 by [Jan Lelis](https://janlelis.com). 
+Copyright (C) 2015 by [Jan Lelis](https://janlelis.com).
