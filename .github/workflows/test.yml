@@ -17,6 +17,8 @@ jobs:
         - truffleruby-20.3.0
         os:
         - ubuntu-latest
+    env:
+      JRUBY_OPTS: "-X+O"
     runs-on: ${{matrix.os}}
     steps:
     - uses: actions/checkout@v2
