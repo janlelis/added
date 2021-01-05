@@ -18,7 +18,7 @@ Ruby allows you to run hooks, when an module is inserted into another object:
 * Module#included
 * Module#prepended
 
-This gem unifies all these hooks into a single `Module#added` one, which will be fired for *all* instances that the module has been added to. An example use case might be that you want to set some instance variable for all instances that include the module. There are three different occassions a hook is fired:
+This gem unifies all these hooks into a single `Module#added` one, which will be fired for *all* instances that the module has been added to. An example use case might be that you want to set some instance variable for all instances that include the module. There are three different occasions a hook is fired:
 
 * An object extends itself with the module -> The added hook will run for this object
 * A class has included/prepended the module -> The added hook will run on newly initialized objects of this class
@@ -77,7 +77,7 @@ object.instance_variable_get(:@my) # => "state"
 
 ## JRuby Notes
 
-This gem requires a Module#prepend implementation and must have the ObjectSpace available. As JRuby user this means you will need to run JRuby 9000 with the -X+O option to use this gem.
+This gem requires a Module#prepend implementation and must have the ObjectSpace available. As JRuby user this means you will need to run JRuby with the -X+O option to use this gem.
 
 
 # Also See
